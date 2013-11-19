@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+	    android:background="#FFF7F7F7">
+        <TextView
+            android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:layout_weight="3"
+		    android:gravity="center"
+		    android:text="방 제목"
+		    />
+        <TextView
+            android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="인원"
+		    />
+		<Button
+		    android:id="@+id/sns_room_makeroom"
+		    android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:layout_weight="1.5"
+		    
+		    android:text="방 만들기"/>
+		
+	</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+	    android:background="#FFF7F7F7" >
+
+        <ListView
+            android:id="@+id/sns_room_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+		    android:padding="5dp"
+			android:divider="@android:color/transparent"
+			android:dividerHeight="10.0sp"
+             >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#FFDCDCDD"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+    <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/measure_tool_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="NFC태그에 태깅 해주세요."
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal" android:baselineAligned="false">
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <LinearLayout
+                android:id="@+id/contents"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical">
+            <LinearLayout 
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"/>
+            <LinearLayout android:id="@+id/timer"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:background="@drawable/rounded_edge"
+                          android:layout_weight="2">
+                <TextView android:id="@+id/measure_time_view"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:gravity="center"
+                          android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                          android:textColor="@android:color/black"
+                          android:text="태깅해 주세요." />
+            </LinearLayout>
+            <LinearLayout 
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="3"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_height="0dp"
+                              android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/notice"
+                              android:textColor="@android:color/black"
+                              android:layout_gravity="right"/>
+                </LinearLayout>
+                <LinearLayout android:layout_height="0dp"
+                              android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:layout_weight="5">
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="2" />
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="4">
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="4">
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

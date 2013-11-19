@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" 
+    android:background="#FFEEEFEF"
+    >
+	<TextView 
+	    android:id="@+id/sns_room_name"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:layout_width="0dp"
+	    android:layout_weight="3"
+	    />
+	    
+	<TextView 
+	    android:id="@+id/sns_room_pnum"
+	    android:layout_height="fill_parent"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:background="#FFF7F7F7"
+	    android:gravity="center"
+	    />
+	
+	<Button
+	    android:id="@+id/sns_room_button"
+	    android:layout_height="fill_parent"
+	    android:layout_width="0dp"
+	    android:layout_weight="1.5"
+	    android:gravity="center"
+	    android:background="#FFA5D294"
+	    android:text="입장"
+	    />
+
+</LinearLayout>

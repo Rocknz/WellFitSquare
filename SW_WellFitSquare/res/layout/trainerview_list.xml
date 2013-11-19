@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/trainer_list_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/trainner_girl"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/trainer_list_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="\n\n\n\n\n\n\n\n\n경력 및 약력 등의 정보 \n 이름, 경력, 전화번호, 소개, 사진"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:background="#992C26"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/trainer_list_self"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="자기소개" />
+
+        <Button
+            android:id="@+id/trainer_list_btn_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/call" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:orientation="horizontal"
+        
+         >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding = "5dp"
+    android:background="#FFFFFFFF">
+    
+    <LinearLayout 
+        android:layout_width = "fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+		<Button 
+		    android:id="@+id/Exercise_Add"
+		    android:layout_width="0dp"
+		    android:layout_height="30dp"
+		    android:layout_weight="1"
+		    android:background="#FF7FC270"
+		    android:layout_marginRight="5dp"
+		    android:text="운동하기"/>
+		<Button 
+		    android:id="@+id/Exercise_Sum"
+		    android:layout_width="0dp"
+		    android:layout_height="30dp"
+		    android:layout_weight="1"
+	        android:background="#FF6161AA"
+	        android:textColor="#FFFFFFFF"
+		    android:layout_marginLeft="5dp"
+		    android:text="기록 보기"/>
+	</LinearLayout>
+	<ListView 
+	    android:id="@+id/Exercise_List"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="5dp"
+		android:divider="@android:color/transparent"
+		android:dividerHeight="10.0sp"/>
+
+</LinearLayout>

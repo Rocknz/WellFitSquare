@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF"
+    android:padding="5dp"
+    tools:context=".MainActivity" >
+
+    <HorizontalScrollView
+        android:id="@+id/PT_time_h_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:fillViewport="true">
+     	<LinearLayout 
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="fill_parent">
+		    <WebView
+		        android:id="@+id/PT_time_webview"
+		        android:layout_width="600dp"
+		        android:layout_height="fill_parent" />
+   		</LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout 
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+	    android:paddingTop="5dp"
+        >
+     	<LinearLayout
+     	    android:id="@+id/PT_time_layout"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="40"
+		    android:background="#FF7FC270"
+	        android:orientation="horizontal">
+		    <ImageView
+		        android:layout_width="0dp"
+		        android:layout_weight="2"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/calr" />
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="9"
+		        android:id = "@+id/PT_time_dateText"
+		        android:gravity="center"
+		        android:textColor="#FF000000"
+		        android:text="클릭하여 날짜를 선택해주세요"/>
+	    </LinearLayout>
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"/>
+	    <Button
+	        android:id = "@+id/PT_time_Button"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="19"
+	        android:background="#FF6161AA"
+	        android:textColor="#FFFFFFFF"
+	        android:text="PT 신청하기"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    
+     >
+     <LinearLayout
+         android:id="@+id/temp3"
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:layout_alignParentBottom="true"
+         android:orientation="horizontal"
+         android:padding = "5dp"
+         >
+		<Button 
+		    android:layout_width="0dp"
+		    android:layout_weight="5"
+	        android:layout_height="fill_parent"
+	        android:id="@+id/btn_board_content_write"
+		    android:background="#FF7FC270"
+		    android:text="글쓰기"
+		    />
+		<TextView
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="fill_parent"
+		    />
+		<Button 
+		    android:layout_width="0dp"
+		    android:layout_weight="5"
+	        android:layout_height="fill_parent"
+	        android:id="@+id/btn_board_content_room_choice"
+		    android:background="#FF6161AA"
+		    android:text="방 선택"
+		    />
+	</LinearLayout>
+    
+    
+    
+    <ListView
+        android:layout_above="@id/temp3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_board_content"
+        />
+
+</RelativeLayout>

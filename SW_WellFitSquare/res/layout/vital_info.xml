@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="28"
+                android:tabStripEnabled="false" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3" >
+
+                <LinearLayout
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DCDCDD"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="#21AB38"
+                            android:padding="10dp"
+                            android:text="체중"
+                            android:textColor="#FFFFFF" 
+                            android:id="@+id/vital_info_health_kind_weight"
+                            
+                            />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="#21AB38"
+                            android:padding="10dp"
+                            android:text="혈압"
+                            android:textColor="#FFFFFF" 
+                            android:id="@+id/vital_info_health_kind_pressure"
+                            />
+                    </LinearLayout>
+
+                    <WebView
+                        android:id="@+id/vital_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#7FC270"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/vital_info_btn_health_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/calr" 
+                                
+                                />
+
+                            <TextView
+                                android:id="@+id/vital_info_txt_health_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="날짜 : "
+                                android:textColor="#FFFFFF" />
+
+                            <Button
+                                android:id="@+id/vital_info_btn_health_add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit" />
+
+                            <TextView
+                                android:id="@+id/weight"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="체중 :"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/blood"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="혈압 :"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/vital_list_health"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5D294"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:id="@+id/txt_weight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="체중 : "
+                                android:textColor="#FFFFFF"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_pressure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="혈압 : "
+                                android:textColor="#FFFFFF"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DCDCDD"
+                        android:orientation="horizontal"
+                        android:padding="10dp" 
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="#21AB38"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="등"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="#21AB38"
+                            android:padding="10dp"
+                            android:text="가슴"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="#21AB38"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="팔"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="#21AB38"
+                            android:padding="10dp"
+                            android:text="복근"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="#21AB38"
+                            android:padding="10dp"
+                            android:text="다리"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <WebView
+                        android:id="@+id/exercise_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#7FC270"
+                            android:orientation="horizontal" 
+                            android:gravity="right"
+                            >
+
+
+                                <LinearLayout
+						     	    android:id="@+id/vital_info_layout_excite_add"
+							        android:layout_width="match_parent"
+							        android:layout_height="wrap_content"
+							        android:layout_weight="40"
+								    android:background="#FF7FC270"
+							        android:orientation="horizontal">
+									    <ImageView
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:background="@drawable/add" />
+									    
+									    <TextView
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:id = "@+id/PT_time_dateText"
+									        android:layout_gravity="center"
+									        android:textColor="#FF000000"
+									        android:text="클릭하여 운동을 추가해주세요"/>
+	    					</LinearLayout>
+     
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/vital_list_excite"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5D294" 
+                            android:cacheColorHint="#00000000"
+                            >
+                        </ListView>
+
+                       
+
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

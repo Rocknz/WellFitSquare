@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp" 
+    android:background="#CC992C26"
+    >
+	<RelativeLayout
+	    android:layout_centerInParent="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:background="#FFFFFFFF">"
+	    <LinearLayout
+	        android:id="@+id/LL"
+		    android:layout_centerInParent="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:gravity="center"
+		    android:background="#FFFFFFFF">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="30sp"
+		        android:layout_marginBottom="30dp"
+		        android:text="Login" />
+		
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text=" 아 이 디 " />
+		
+		        <EditText
+		            android:id="@+id/id_input"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content" />
+		    </LinearLayout>
+		
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="비밀번호" />
+		
+		        <EditText
+		            android:id="@+id/password_input"
+		            android:inputType ="textPassword"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content" />
+		    </LinearLayout>
+		
+			    <LinearLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+		        
+					<TextView 
+				    android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="자동로그인"    />
+			        
+			        <CheckBox
+			            android:id="@+id/check"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content" />
+			
+			        <Button
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="로그인" 
+			            android:id="@+id/enter"
+			            />
+			
+			        <Button
+			            android:id="@+id/btn_new_member"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="회원가입" />
+			
+			  </LinearLayout>
+		 </LinearLayout>
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_above="@id/LL"
+	        android:src="@drawable/rock1"/>
+	</RelativeLayout>>
+</RelativeLayout>

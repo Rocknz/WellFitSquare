@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:orientation="horizontal"
+   		
+        >
+        <LinearLayout 
+            android:layout_width="0dp"
+   			android:layout_height="match_parent"
+   			android:layout_weight="2"
+   			android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <ImageView 
+            android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:id="@+id/board_image"
+   			android:layout_weight="1"
+   			android:layout_gravity="center_horizontal"
+   			android:padding="2dp"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:id="@+id/board_writer"
+   			android:textStyle="bold"
+   			android:textSize="18dp"
+   			android:padding="2dp"
+   			android:layout_gravity="center_horizontal"
+   			android:layout_weight="4"
+            />
+            
+            
+        </LinearLayout>
+        
+        
+        
+        <TextView 
+            android:layout_width="0dp"
+   			android:layout_height="wrap_content"
+   			android:id="@+id/text1"
+   			android:textStyle="bold"
+   			android:textSize="18sp"
+   			android:paddingTop="40dp"
+   			android:paddingBottom="40dp"
+   			android:layout_weight="4"
+            />
+        
+    </LinearLayout>
+   
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+   		android:layout_height="30dp"
+   		android:orientation="horizontal"
+        >
+        <Button 
+	        android:layout_width="match_parent"
+	   		android:layout_height="fill_parent"
+	        android:text="수정"
+	        android:id="@+id/btn_update"
+	        android:layout_weight="1"
+	    	android:background="#FFA5D294"
+   			android:layout_margin="5dp"
+	        android:visibility="gone"/>
+        <Button 
+        	android:layout_width="match_parent"
+   			android:layout_height="fill_parent"
+	        android:text="삭제"
+	        android:id="@+id/btn_remove"
+	        android:layout_weight="1"
+	    	android:background="#FFA5D294"
+   			android:layout_margin="5dp"
+	        android:visibility="gone"
+        />
+        <Button 
+	        android:layout_width="match_parent"
+	   		android:layout_height="fill_parent"
+	        android:text="댓글"
+	        android:id="@+id/btn_reply"
+	    	android:background="#FFA5D294"
+   			android:layout_margin="5dp"
+	        android:layout_weight="1"
+	        />
+    </LinearLayout>
+</LinearLayout>
